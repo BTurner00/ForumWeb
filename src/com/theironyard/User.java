@@ -6,9 +6,16 @@ package com.theironyard;
 public class User {
     String name;
     String password;
+    int id;
 
-    public User(String password, String name) {
+    public User(int id, String name, String password) {
         this.password = password;
         this.name = name;
+        this.id = id;
+    }
+
+    public User(String name, String password) {
+        this.name = name;
+        this.password = password;
     }
 }
